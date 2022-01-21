@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+body{
+background-color:lightslategray;
+color:white;
+display: flex;
+justify-content: center;
+
+}
+.heading{
+font-size: 2em;
+text-align: center;
+margin-top: 1em 0;
+}
+.score{
+font-size: 1em;
+text-align: center;
+margin:1em 0;
+}
+.holecount{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+grid-gap: 1em;
+justify-items: center;
+
+}
+.hole{
+position: relative;
+width:80px;
+height:80px;
+background-color: black;
+border-radius: 50px;
+overflow: hidden;
+}
+.mole{
+
+position: absolute;
+z-index:1;
+height:60px;
+bottom:0;
+transform: translatex(40%);
+animation:appear 0.13s linear;
+pointer-events:none;
+}
+@keyframes appear{
+from{
+    bottom:-60px;
+}
+to{
+    bottom:0;
+}
+}
+/*
+<img  class="mole" src="mole.png" />
+</div>*/
+.buttons{
+    margin-top:4em;
+    text-align: center;
+}
+.buttons button{
+    padding: 14px 45px;
+    color:white;
+   
+    border:1px solid white;
+    background-color: inherit;
+    border-radius:20px;
+    outline: none;
+}
+button.stop{
+
+display: none;
+}
+.cursor img{
+position: absolute;
+height:125px;
+z-index:2;
+transform: translate(-10Ppx-40px);
+pointer-events: none;
+}
+@keyframes hit{
+
+from{
+transform: rotate(0deg);
+    
+}
+to
+{
+transform: rotate(-30deg);
+
+}
+}
