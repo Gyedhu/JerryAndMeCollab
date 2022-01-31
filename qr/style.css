@@ -1,0 +1,39 @@
+*{
+
+box-sizing: border-box;
+
+}
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: White hsl(0, 0%, 100%);
+    /*text-align: center;*/
+}
+.parent{
+border:1px solid black;
+width:500px;
+height:500px;
+align-items: center;
+margin-left:400px;
+margin-top:200px;
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+}
+.pic{
+    border:none;
+    height: 300px;
+    width:100%;
+    border-radius: 15px;
+    background-image: url('jerry.jpg') center center ;
+    background-size: contain;
+}
+.imgs{
+
+}
+.write{
+   
+    flex: 1vh;
+    width: 100%;
+}
